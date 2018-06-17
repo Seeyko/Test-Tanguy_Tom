@@ -1,0 +1,404 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Scripts/Navigation_level_menu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Textures/level_map.jpg" type="Texture" id=2]
+[ext_resource path="res://Assets/Fonts/alegreya-sc/AlegreyaSC-Italic.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/Scenes/Player.tscn" type="PackedScene" id=4]
+
+[sub_resource type="NavigationPolygon" id=1]
+
+vertices = PoolVector2Array( 578.982, 377.005, 420.314, 289.737, 486.954, 261.177, 671.009, 367.485, 518.688, 489.659, 426.661, 491.246, 566.288, 572.166, 598.022, 542.019, 674.183, 908.542, 613.889, 875.222, 671.009, 835.555, 748.757, 848.248, 650.382, 787.955, 580.569, 781.608, 847.131, 568.993, 882.038, 595.966, 885.211, 808.581, 1070.85, 919.649, 1028.01, 949.796, 799.53, 821.275, 991.518, 657.847, 1031.19, 672.127, 736.063, 451.579, 1116.87, 673.714, 1080.37, 705.447, 736.063, 507.112, 394.927, 791.128, 369.54, 734.007, 31.1003, 590.202, 60.5504, 556.002 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 0, 3, 4, 5 ), PoolIntArray( 6, 5, 4, 7 ), PoolIntArray( 8, 9, 10, 11 ), PoolIntArray( 12, 11, 10, 13 ), PoolIntArray( 12, 13, 14, 15 ), PoolIntArray( 16, 17, 18, 19 ), PoolIntArray( 16, 19, 20, 21 ), PoolIntArray( 22, 23, 24, 21 ), PoolIntArray( 22, 21, 20, 15, 14 ), PoolIntArray( 22, 14, 25 ), PoolIntArray( 7, 22, 25, 26, 6 ), PoolIntArray( 27, 6, 26 ), PoolIntArray( 27, 26, 28, 29 ) ]
+outlines = [ PoolVector2Array( 60.5504, 556.002, 369.54, 734.007, 566.288, 572.166, 426.661, 491.246, 578.982, 377.005, 420.314, 289.737, 486.954, 261.177, 671.009, 367.485, 518.688, 489.659, 598.022, 542.019, 736.063, 451.579, 1116.87, 673.714, 1080.37, 705.447, 1031.19, 672.127, 885.211, 808.581, 1070.85, 919.649, 1028.01, 949.796, 799.53, 821.275, 991.518, 657.847, 882.038, 595.966, 650.382, 787.955, 748.757, 848.248, 674.183, 908.542, 613.889, 875.222, 671.009, 835.555, 580.569, 781.608, 847.131, 568.993, 736.063, 507.112, 394.927, 791.128, 31.1003, 590.202 ) ]
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 50
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Settings" ]
+
+[node name="node2D" type="Node2D"]
+
+[node name="Navigation2D" type="Navigation2D" parent="." index="0"]
+
+script = ExtResource( 1 )
+
+[node name="navpoly" type="NavigationPolygonInstance" parent="Navigation2D" index="0"]
+
+navpoly = SubResource( 1 )
+enabled = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bg" type="Sprite" parent="Navigation2D" index="1"]
+
+position = Vector2( 639.055, 480.219 )
+scale = Vector2( 2.0634, 2.7377 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="1" type="Button" parent="Navigation2D" index="2" groups=[
+"button",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 50.0
+margin_top = 578.0
+margin_right = 108.0
+margin_bottom = 627.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "1"
+flat = false
+align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="2" type="Button" parent="Navigation2D" index="3" groups=[
+"button",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 190.0
+margin_top = 654.0
+margin_right = 248.0
+margin_bottom = 703.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "2"
+flat = false
+align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="3" type="Button" parent="Navigation2D" index="4" groups=[
+"button",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 348.0
+margin_top = 733.0
+margin_right = 406.0
+margin_bottom = 782.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "3"
+flat = false
+align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="4" type="Button" parent="Navigation2D" index="5" groups=[
+"button",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 456.0
+margin_top = 647.0
+margin_right = 514.0
+margin_bottom = 696.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "4"
+flat = false
+align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="5" type="Button" parent="Navigation2D" index="6" groups=[
+"button",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 587.0
+margin_top = 550.0
+margin_right = 645.0
+margin_bottom = 599.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "5"
+flat = false
+align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="6" type="Button" parent="Navigation2D" index="7" groups=[
+"button",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 473.0
+margin_top = 269.0
+margin_right = 531.0
+margin_bottom = 318.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "6"
+flat = false
+align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="7" type="Button" parent="Navigation2D" index="8" groups=[
+"button",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 704.0
+margin_top = 451.0
+margin_right = 762.0
+margin_bottom = 500.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "7"
+flat = false
+align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="8" type="Button" parent="Navigation2D" index="9" groups=[
+"button",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 667.0
+margin_top = 682.0
+margin_right = 725.0
+margin_bottom = 731.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "8"
+flat = false
+align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="9" type="Button" parent="Navigation2D" index="10" groups=[
+"button",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 641.0
+margin_top = 843.0
+margin_right = 699.0
+margin_bottom = 892.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "9"
+flat = false
+align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="10" type="Button" parent="Navigation2D" index="11" groups=[
+"button",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 913.0
+margin_top = 563.0
+margin_right = 971.0
+margin_bottom = 612.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "10"
+flat = false
+align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="11" type="Button" parent="Navigation2D" index="12" groups=[
+"button",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1054.0
+margin_top = 647.0
+margin_right = 1112.0
+margin_bottom = 696.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "11"
+flat = false
+align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="Navigation2D" index="13"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 320.0
+margin_bottom = 128.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Margin", "custom_fonts" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Player" parent="Navigation2D" index="14" instance=ExtResource( 4 )]
+
+position = Vector2( 64, 576 )
+
+

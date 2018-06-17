@@ -1,0 +1,139 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Assets/Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Textures/char/slide0.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Textures/char/idle0.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Textures/char/dash0.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Textures/char/dash1.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Textures/char/run0.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Textures/char/run1.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Textures/char/run2.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Textures/char/run3.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Textures/char/run4.png" type="Texture" id=10]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "slide",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "dash",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "run",
+"speed": 10.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 11.0422
+height = 73.9106
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 11.4616, 11.1716 )
+
+[node name="Player" type="KinematicBody2D" index="0" groups=[
+"Persist",
+]]
+
+scale = Vector2( 0.5, 1 )
+z_as_relative = false
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Material" ]
+
+[node name="Sprite" type="AnimatedSprite" parent="." index="0"]
+
+scale = Vector2( 2.2069, 1 )
+frames = SubResource( 1 )
+animation = "dash"
+playing = true
+__meta__ = {
+"_edit_bone_": true,
+"_edit_lock_": true
+}
+
+[node name="first" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( 1.32472, -20.561 )
+scale = Vector2( 2.50398, 0.276715 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="2"]
+
+position = Vector2( 0.37394, 2.74585 )
+scale = Vector2( 2.02163, 1.1406 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." index="3"]
+
+position = Vector2( 2.38297, 22.8271 )
+scale = Vector2( 1.00492, 0.951236 )
+shape = SubResource( 4 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_lock_": true
+}
+
+[node name="followingCam" type="Camera2D" parent="." index="4"]
+
+position = Vector2( 0, 32 )
+anchor_mode = 1
+rotating = false
+current = false
+zoom = Vector2( 1, 1 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
+smoothing_enabled = false
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+_sections_unfolded = [ "Pause", "Visibility" ]
+__meta__ = {
+"_edit_bone_": true,
+"_edit_lock_": true
+}
+
+
