@@ -7,10 +7,10 @@ path="res://.import/lifebar_bg.png-90a597b5618e6d5308ab571a77b86657.stex"
 [deps]
 
 source_file="res://Assets/Textures/UI/lifebar_bg.png"
-source_md5="df50f22ac78c3f6bdc76d80b2ca5bfe8"
+source_md5="f791c3e904cdf9cf64a0352ef767a128"
 
 dest_files=[ "res://.import/lifebar_bg.png-90a597b5618e6d5308ab571a77b86657.stex" ]
-dest_md5="2042e6830cd8af8291cae84806016916"
+dest_md5="f88956cb987520a5731a2da9c93290a5"
 
 [params]
 

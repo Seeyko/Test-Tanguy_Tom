@@ -7,7 +7,10 @@ path="res://.import/mollet1.png-e9d8489e234a8531090665c2e3b633db.stex"
 [deps]
 
 source_file="res://Assets/Textures/char/player/mollet1.png"
+source_md5="f8ea8e9db5bdbe428476ef1b759dfe9c"
+
 dest_files=[ "res://.import/mollet1.png-e9d8489e234a8531090665c2e3b633db.stex" ]
+dest_md5="c0afe44c2c8d7e9cbbef6fd06ec42e07"
 
 [params]
 

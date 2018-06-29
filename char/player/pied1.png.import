@@ -2,12 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pied1.png-e097416590c34ad9c79d73423e417f96.stex"
+path="res://.import/pied1.png-7f98f1d64b1c481d45c04d069ccd2559.stex"
 
 [deps]
 
-source_file="res://Assets/Textures/char/player/pied1.png"
-dest_files=[ "res://.import/pied1.png-e097416590c34ad9c79d73423e417f96.stex" ]
+source_file="res://char/player/pied1.png"
+source_md5="f938a3eab4b982f3a25846684279f237"
+
+dest_files=[ "res://.import/pied1.png-7f98f1d64b1c481d45c04d069ccd2559.stex" ]
+dest_md5="8b264d2c66bcdd78be1d23dea9fcb9e7"
 
 [params]
 

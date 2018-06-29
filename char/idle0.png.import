@@ -2,12 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/idle0.png-73110b85ea0537288dc934ffe5f423fc.stex"
+path="res://.import/idle0.png-7b65d54b1ec962c680a00fa7660166b9.stex"
 
 [deps]
 
-source_file="res://Assets/Textures/char/idle0.png"
-dest_files=[ "res://.import/idle0.png-73110b85ea0537288dc934ffe5f423fc.stex" ]
+source_file="res://char/idle0.png"
+source_md5="d6192c46b1112d5f957d8c69c5f92e23"
+
+dest_files=[ "res://.import/idle0.png-7b65d54b1ec962c680a00fa7660166b9.stex" ]
+dest_md5="d8f18838d9009656cb5b112b24fbbcfd"
 
 [params]
 

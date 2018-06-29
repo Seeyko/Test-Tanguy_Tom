@@ -1,0 +1,328 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Scripts/Spherier/Spherier.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Textures/Spherier/Dai_archery_abilities.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Scripts/Spherier/cases.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Scenes/UI/runeCompteur.tscn" type="PackedScene" id=4]
+
+[node name="Spherier" type="Control" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 637.0
+margin_bottom = 470.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="case1" type="TextureButton" parent="TextureRect" index="0" groups=[
+"cases",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 300.0
+margin_top = 19.0
+margin_right = 340.0
+margin_bottom = 59.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+script = ExtResource( 3 )
+access = true
+buy = false
+price = 5
+case_name = "Bandage d'arc"
+description = "Super compétence pour mieux bander ton arc"
+runeType = 0
+
+[node name="case2" type="TextureButton" parent="TextureRect" index="1" groups=[
+"cases",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 171.0
+margin_top = 116.0
+margin_right = 211.0
+margin_bottom = 156.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+script = ExtResource( 3 )
+access = false
+buy = false
+price = 3
+case_name = "Bandage d'arc"
+description = "Super compétence pour mieux bander ton arc"
+runeType = 1
+
+[node name="case3" type="TextureButton" parent="TextureRect" index="2" groups=[
+"cases",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 423.0
+margin_top = 111.0
+margin_right = 463.0
+margin_bottom = 151.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+script = ExtResource( 3 )
+access = false
+buy = false
+price = 1
+case_name = "Pointe de folie"
+description = "Wow la pointe est devenu hyper tranchante"
+runeType = 3
+
+[node name="case4" type="TextureButton" parent="TextureRect" index="3" groups=[
+"cases",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 307.0
+margin_top = 212.0
+margin_right = 347.0
+margin_bottom = 252.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+script = ExtResource( 3 )
+access = false
+buy = false
+price = 5
+case_name = "fleche de feu"
+description = "youhou un cracheur de feu"
+runeType = 0
+
+[node name="case5" type="TextureButton" parent="TextureRect" index="4" groups=[
+"cases",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 52.0
+margin_top = 209.0
+margin_right = 92.0
+margin_bottom = 249.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+script = ExtResource( 3 )
+access = false
+buy = false
+price = 3
+case_name = "Fleche d'ange"
+description = "Un vrai cupidon"
+runeType = 3
+
+[node name="case6" type="TextureButton" parent="TextureRect" index="5" groups=[
+"cases",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 546.0
+margin_top = 207.0
+margin_right = 586.0
+margin_bottom = 247.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+script = ExtResource( 3 )
+access = false
+buy = false
+price = 3
+case_name = "Fleche disruptive"
+description = "Je ne sais pas ce que ça veut trop dire"
+runeType = 2
+
+[node name="case7" type="TextureButton" parent="TextureRect" index="6" groups=[
+"cases",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 177.0
+margin_top = 302.0
+margin_right = 217.0
+margin_bottom = 342.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+script = ExtResource( 3 )
+access = false
+buy = false
+price = 4
+case_name = ""
+description = ""
+runeType = 0
+
+[node name="case8" type="TextureButton" parent="TextureRect" index="7" groups=[
+"cases",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 423.0
+margin_top = 299.0
+margin_right = 463.0
+margin_bottom = 339.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+script = ExtResource( 3 )
+access = false
+buy = false
+price = 3
+case_name = ""
+description = ""
+runeType = 2
+
+[node name="case9" type="TextureButton" parent="TextureRect" index="8" groups=[
+"cases",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 296.0
+margin_top = 398.0
+margin_right = 336.0
+margin_bottom = 438.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+script = ExtResource( 3 )
+access = false
+buy = false
+price = 6
+case_name = ""
+description = ""
+runeType = 0
+
+[node name="runeCompteur" parent="TextureRect" index="9" instance=ExtResource( 4 )]
+
+

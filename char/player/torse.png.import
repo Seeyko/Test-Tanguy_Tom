@@ -2,12 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/torse.png-a4cabbe0a40510c63fe825f2d916f5e9.stex"
+path="res://.import/torse.png-65a4a9eeb44e6d9e4abed73b351b9e91.stex"
 
 [deps]
 
-source_file="res://Assets/Textures/char/player/torse.png"
-dest_files=[ "res://.import/torse.png-a4cabbe0a40510c63fe825f2d916f5e9.stex" ]
+source_file="res://char/player/torse.png"
+source_md5="5fb69c67c43d0eb12a4eaec07540b97f"
+
+dest_files=[ "res://.import/torse.png-65a4a9eeb44e6d9e4abed73b351b9e91.stex" ]
+dest_md5="5f132c64c1026bf8318c04f27975f2f7"
 
 [params]
 

@@ -2,12 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dash1.png-1f6e6013232b27b3fd331381515e2398.stex"
+path="res://.import/dash1.png-251d931ec12bed3526428a49b50e312c.stex"
 
 [deps]
 
-source_file="res://Assets/Textures/char/dash1.png"
-dest_files=[ "res://.import/dash1.png-1f6e6013232b27b3fd331381515e2398.stex" ]
+source_file="res://char/dash1.png"
+source_md5="c7d315e8b613faa0444025f5529d7348"
+
+dest_files=[ "res://.import/dash1.png-251d931ec12bed3526428a49b50e312c.stex" ]
+dest_md5="15df2fb3778e1f3fd2e985c0c5c1bed0"
 
 [params]
 

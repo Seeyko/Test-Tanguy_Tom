@@ -51,7 +51,7 @@ extents = Vector2( 10, 10 )
 custom_solver_bias = 0.0
 extents = Vector2( 11.4616, 11.1716 )
 
-[node name="Player" type="KinematicBody2D" index="0" groups=[
+[node name="Player" type="KinematicBody2D" groups=[
 "Persist",
 ]]
 
@@ -69,6 +69,7 @@ _sections_unfolded = [ "Material" ]
 scale = Vector2( 2.2069, 1 )
 frames = SubResource( 1 )
 animation = "dash"
+frame = 1
 playing = true
 __meta__ = {
 "_edit_bone_": true,

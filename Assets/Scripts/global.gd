@@ -4,8 +4,9 @@ var current_scene = null
 
 var next_level_resource = load("res://Assets/Scenes/hoveringMenu.tscn")
 var next_level = next_level_resource.instance()
+
 func _ready():
-		Player.load_game()
+		#player_data.load_game()
 		var root = get_tree().get_root()
 		current_scene = root.get_child( root.get_child_count() -1 )
 
@@ -50,3 +51,9 @@ func _deferred_goto_scene(path):
 
     # optional, to make it compatible with the SceneTree.change_scene() API
     get_tree().set_current_scene( current_scene )
+	
+func _get_pngName_fromPath(var path):
+	var textArray = path.split("/", true)
+	var pngArray = textArray[textArray.size()-1].split(".", true)
+
+	return pngArray[0]

@@ -2,12 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jambe.png-4a45984d4073c637a5c14875de29c9ec.stex"
+path="res://.import/jambe.png-5de527b7088638f284af6de568b5c34f.stex"
 
 [deps]
 
-source_file="res://Assets/Textures/char/player/jambe.png"
-dest_files=[ "res://.import/jambe.png-4a45984d4073c637a5c14875de29c9ec.stex" ]
+source_file="res://char/player/jambe.png"
+source_md5="02dd54b23d75bc34801754b98c31d841"
+
+dest_files=[ "res://.import/jambe.png-5de527b7088638f284af6de568b5c34f.stex" ]
+dest_md5="68f68a87cd703fa2a41239b6822d969f"
 
 [params]
 

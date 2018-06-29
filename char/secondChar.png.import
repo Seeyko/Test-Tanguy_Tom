@@ -2,12 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/secondChar.png-3f6df8b80251a250efba07c4df0200ab.stex"
+path="res://.import/secondChar.png-4b4c71fa944dd3552bf9ce48d095dbee.stex"
 
 [deps]
 
-source_file="res://Assets/Textures/char/secondChar.png"
-dest_files=[ "res://.import/secondChar.png-3f6df8b80251a250efba07c4df0200ab.stex" ]
+source_file="res://char/secondChar.png"
+source_md5="c7d315e8b613faa0444025f5529d7348"
+
+dest_files=[ "res://.import/secondChar.png-4b4c71fa944dd3552bf9ce48d095dbee.stex" ]
+dest_md5="15df2fb3778e1f3fd2e985c0c5c1bed0"
 
 [params]
 

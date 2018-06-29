@@ -7,7 +7,10 @@ path="res://.import/pied2.png-5e05dd27078a2ef020845a18d764932e.stex"
 [deps]
 
 source_file="res://Assets/Textures/char/player/pied2.png"
+source_md5="61538531bdf9f3d90357b883b52384a5"
+
 dest_files=[ "res://.import/pied2.png-5e05dd27078a2ef020845a18d764932e.stex" ]
+dest_md5="d8acd80a5ab2fb181d6826e6b0a3317c"
 
 [params]
 

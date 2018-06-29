@@ -7,10 +7,10 @@ path="res://.import/lifebar_fill.png-59b062902d42bfd212a46b71aaaa04a6.stex"
 [deps]
 
 source_file="res://Assets/Textures/UI/lifebar_fill.png"
-source_md5="498583231b7117aa7a2bdca24dd4beb9"
+source_md5="6ce95356bdfbc0811e7077ce2abdf382"
 
 dest_files=[ "res://.import/lifebar_fill.png-59b062902d42bfd212a46b71aaaa04a6.stex" ]
-dest_md5="ce47edc7aafecd43501db6492857e845"
+dest_md5="d1fa503bad1173f94b5f749ffa288f6d"
 
 [params]
 

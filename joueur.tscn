@@ -7,8 +7,10 @@
 [ext_resource path="res://Assets/Textures/char/player/mollet1.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Textures/char/player/pied1.png" type="Texture" id=6]
 [ext_resource path="res://Assets/Textures/char/player/pied2.png" type="Texture" id=7]
-[ext_resource path="res://Assets/dash.tres" type="Animation" id=8]
-[ext_resource path="res://Assets/idle.tres" type="Animation" id=9]
+[ext_resource path="res://dash.tres" type="Animation" id=8]
+[ext_resource path="res://idle.tres" type="Animation" id=9]
+
+
 
 [sub_resource type="Animation" id=1]
 

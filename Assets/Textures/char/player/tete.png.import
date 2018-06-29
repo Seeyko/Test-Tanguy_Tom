@@ -7,7 +7,10 @@ path="res://.import/tete.png-07a7d86300f7eb3dff8cc98682229873.stex"
 [deps]
 
 source_file="res://Assets/Textures/char/player/tete.png"
+source_md5="5c564e5d9fddc7e80019ed21a649440a"
+
 dest_files=[ "res://.import/tete.png-07a7d86300f7eb3dff8cc98682229873.stex" ]
+dest_md5="24e2164017e4a2c32214f7bb9fbb9fcf"
 
 [params]
 

@@ -2,12 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hanches.png-959061cf9718a8688ba9fcffe2dced20.stex"
+path="res://.import/hanches.png-a8a7fd9b55f21c6aabb426c17ac7e50c.stex"
 
 [deps]
 
-source_file="res://Assets/Textures/char/player/hanches.png"
-dest_files=[ "res://.import/hanches.png-959061cf9718a8688ba9fcffe2dced20.stex" ]
+source_file="res://char/player/hanches.png"
+source_md5="e203a8617f87004721ac23f512fc525f"
+
+dest_files=[ "res://.import/hanches.png-a8a7fd9b55f21c6aabb426c17ac7e50c.stex" ]
+dest_md5="8fe08051a6300ac03fa3d5c3721b8b26"
 
 [params]
 

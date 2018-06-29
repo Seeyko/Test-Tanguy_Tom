@@ -7,7 +7,10 @@ path="res://.import/jambe.png-4a45984d4073c637a5c14875de29c9ec.stex"
 [deps]
 
 source_file="res://Assets/Textures/char/player/jambe.png"
+source_md5="02dd54b23d75bc34801754b98c31d841"
+
 dest_files=[ "res://.import/jambe.png-4a45984d4073c637a5c14875de29c9ec.stex" ]
+dest_md5="68f68a87cd703fa2a41239b6822d969f"
 
 [params]
 

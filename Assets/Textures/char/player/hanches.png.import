@@ -7,7 +7,10 @@ path="res://.import/hanches.png-959061cf9718a8688ba9fcffe2dced20.stex"
 [deps]
 
 source_file="res://Assets/Textures/char/player/hanches.png"
+source_md5="e203a8617f87004721ac23f512fc525f"
+
 dest_files=[ "res://.import/hanches.png-959061cf9718a8688ba9fcffe2dced20.stex" ]
+dest_md5="8fe08051a6300ac03fa3d5c3721b8b26"
 
 [params]
 
