@@ -27,6 +27,210 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Vector2( -0.75824, -0.0412846 ) ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("Player/hanches:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Player/hanches/torse:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -3.06636, -2.34917 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Player/hanches/torse:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 6.47838 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Player/hanches/torse/tete:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2.77993, -17.9243 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Player/hanches/torse/tete:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Player/hanches/jambe2:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.73692, 3.50695 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Player/hanches/jambe2:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -15.4374 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Player/hanches/jambe2/mollet1:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -0.128487, 13.1962 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Player/hanches/jambe2/mollet1:rotation_degrees")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 16.1828 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Player/hanches/jambe2/mollet1/pied1:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -0.663153, 17.0279 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Player/hanches/jambe2/mollet1/pied1:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 41.0357 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Player/hanches/jambe:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -0.928383, 3.84047 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Player/hanches/jambe:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 3950.96 ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Player/hanches/jambe/mollet1:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -0.697252, 13.2074 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Player/hanches/jambe/mollet1:rotation_degrees")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 44.2814 ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Player/hanches/jambe/mollet1/pied2:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -0.902681, 16.7665 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Player/hanches/jambe/mollet1/pied2:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -17.6293 ]
+}
 
 [sub_resource type="Animation" id=1]
 
@@ -659,6 +863,7 @@ position = Vector2( -3.06636, -2.34917 )
 rotation = 0.113069
 texture = ExtResource( 3 )
 offset = Vector2( 1.0618, -9.69275 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="tete" type="Sprite" parent="Player/hanches/torse" index="0" groups=[
 "sprite",
@@ -667,6 +872,7 @@ offset = Vector2( 1.0618, -9.69275 )
 position = Vector2( 2.77993, -17.9243 )
 texture = ExtResource( 4 )
 offset = Vector2( 1.02894, -8.67271 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="jambe2" type="Sprite" parent="Player/hanches" index="1" groups=[
 "sprite",
@@ -676,6 +882,7 @@ position = Vector2( 1.73692, 3.50695 )
 rotation = -0.269433
 texture = ExtResource( 5 )
 offset = Vector2( 0.0780595, 4.46166 )
+_sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_bone_": true,
 "_edit_ik_": true
@@ -689,6 +896,7 @@ position = Vector2( -0.128487, 13.1962 )
 rotation = 0.282444
 texture = ExtResource( 6 )
 offset = Vector2( -0.541275, 11.7445 )
+_sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_bone_": true
 }
@@ -697,10 +905,12 @@ __meta__ = {
 "sprite",
 ]]
 
+editor/display_folded = true
 position = Vector2( -0.663153, 17.0279 )
 rotation = 0.716208
 texture = ExtResource( 7 )
 offset = Vector2( 0.9886, 3.10657 )
+_sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_bone_": true
 }
@@ -721,6 +931,7 @@ position = Vector2( -0.928383, 3.84047 )
 rotation = 68.9572
 texture = ExtResource( 5 )
 offset = Vector2( -0.537912, 6.39081 )
+_sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_bone_": true,
 "_edit_ik_": true
@@ -734,6 +945,7 @@ position = Vector2( -0.697252, 13.2074 )
 rotation = 0.772856
 texture = ExtResource( 6 )
 offset = Vector2( -1.88251, 12.1573 )
+_sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_bone_": true
 }
@@ -746,6 +958,7 @@ position = Vector2( -0.902681, 16.7665 )
 rotation = -0.30769
 texture = ExtResource( 8 )
 offset = Vector2( 0.686695, 3.26379 )
+_sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_bone_": true
 }
