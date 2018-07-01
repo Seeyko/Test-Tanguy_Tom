@@ -2,8 +2,8 @@
 
 [ext_resource path="res://Assets/Scripts/World2.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Textures/JapaneseMinimalTileSet.tres" type="TileSet" id=2]
-[ext_resource path="res://Assets/Scenes/Player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Assets/Scenes/teleportation.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Scenes/teleportation.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Scenes/joueur.tscn" type="PackedScene" id=4]
 
 [node name="World2" type="Node2D"]
 
@@ -30,13 +30,13 @@ format = 1
 tile_data = PoolIntArray( 786448, 0, 0, 786449, 4, 0, 786450, 1, 0, 851984, 5, 0, 851985, 5, 0, 851986, 5, 0, 917518, 0, 0, 917519, 4, 0, 917520, 5, 0, 917521, 5, 0, 917522, 5, 0, 983054, 5, 0, 983055, 4, 0, 983056, 4, 0, 983057, 4, 0, 983058, 2, 0, 1048588, 0, 0, 1048589, 4, 0, 1048590, 5, 0, 1048591, 4, 0, 1048592, 4, 0, 1048593, 4, 0, 1048594, 4, 0, 1048595, 4, 0, 1048596, 4, 0, 1048597, 4, 0, 1048598, 4, 0, 1048599, 4, 0, 1048600, 4, 0, 1048601, 4, 0, 1048602, 4, 0, 1048603, 4, 0, 1048604, 1, 0, 1114122, 0, 0, 1114123, 4, 0, 1114124, 5, 0, 1114125, 4, 0, 1114126, 4, 0, 1114127, 4, 0, 1114128, 4, 0, 1114129, 4, 0, 1114130, 4, 0, 1114131, 4, 0, 1114132, 4, 0, 1114133, 4, 0, 1114134, 4, 0, 1114135, 4, 0, 1114136, 4, 0, 1114137, 4, 0, 1114138, 4, 0, 1114139, 4, 0, 1114140, 2, 0, 1179656, 5, 0, 1179658, 3, 0, 1179659, 4, 0, 1179660, 2, 0, 1245185, 0, 0, 1245186, 4, 0, 1245187, 4, 0, 1245188, 4, 0, 1245189, 4, 0, 1245190, 1, 0, 1310721, 3, 0, 1310722, 4, 0, 1310723, 4, 0, 1310724, 4, 0, 1310725, 4, 0, 1310726, 2, 0 )
 _sections_unfolded = [ "Cell" ]
 
-[node name="Player" parent="." index="1" instance=ExtResource( 3 )]
-
-position = Vector2( 96, 576 )
-
-[node name="Area2D" parent="." index="2" instance=ExtResource( 4 )]
+[node name="Area2D" parent="." index="1" instance=ExtResource( 3 )]
 
 position = Vector2( 864, 480 )
 world_scene = "res://Assets/Scenes/World1.tscn"
+
+[node name="joueur" parent="." index="2" instance=ExtResource( 4 )]
+
+position = Vector2( 131.67, 154.501 )
 
 

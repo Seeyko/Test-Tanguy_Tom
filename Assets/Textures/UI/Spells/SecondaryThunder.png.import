@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PrincipalFire.png-f955a9acec557b768bdb3eb544e8c61a.stex"
+path="res://.import/SecondaryThunder.png-19dd25b6b9dba54d4b7d1db0904a9152.stex"
 
 [deps]
 
-source_file="res://Assets/Textures/UI/PrincipalFire.png"
-source_md5="7949515e233dd9f2fa9ac4c87a987a90"
+source_file="res://Assets/Textures/UI/Spells/SecondaryThunder.png"
+source_md5="90d3d2c0c0b66a04a122117a06e624f0"
 
-dest_files=[ "res://.import/PrincipalFire.png-f955a9acec557b768bdb3eb544e8c61a.stex" ]
-dest_md5="1d71b75cc4158687083a0229d2739306"
+dest_files=[ "res://.import/SecondaryThunder.png-19dd25b6b9dba54d4b7d1db0904a9152.stex" ]
+dest_md5="e69488b36d84d6960d470d8b66f9b37c"
 
 [params]
 

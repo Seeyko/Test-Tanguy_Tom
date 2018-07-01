@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bigselecteur.png-e5b8223198f4b453267d9587e6a5b2bf.stex"
+path="res://.import/PassiveWater.png-141711134b364cced594fc9cfccd534e.stex"
 
 [deps]
 
-source_file="res://Assets/Textures/UI/bigselecteur.png"
-source_md5="7c71ddb1b1406911ffe2315a33afc92e"
+source_file="res://Assets/Textures/UI/Spells/PassiveWater.png"
+source_md5="4539445d9513362a36de0c14de80b6ca"
 
-dest_files=[ "res://.import/bigselecteur.png-e5b8223198f4b453267d9587e6a5b2bf.stex" ]
-dest_md5="8fcb9beb3d8f0ba7e9ae67fb98b0628d"
+dest_files=[ "res://.import/PassiveWater.png-141711134b364cced594fc9cfccd534e.stex" ]
+dest_md5="5b531813314045d728d505da34b06d59"
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SecondaryWater.png-b95bf1ee69128d81f10604e1f4179e81.stex"
+path="res://.import/SecondaryWind.png-3ba55ac80bdc2353aa04b21d2bea81a8.stex"
 
 [deps]
 
-source_file="res://Assets/Textures/UI/SecondaryWater.png"
-source_md5="4b322824580a69f8bc2d477671627f41"
+source_file="res://Assets/Textures/UI/Spells/SecondaryWind.png"
+source_md5="79cd2ea915b6e38c0e19f91008e870ce"
 
-dest_files=[ "res://.import/SecondaryWater.png-b95bf1ee69128d81f10604e1f4179e81.stex" ]
-dest_md5="619f09edd5743e534ce1bf0ab057ca8a"
+dest_files=[ "res://.import/SecondaryWind.png-3ba55ac80bdc2353aa04b21d2bea81a8.stex" ]
+dest_md5="2f0e54ad9d8d4d9accd799fa859aafd1"
 
 [params]
 

@@ -1,38 +1,38 @@
 [gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/Scripts/Player.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Textures/char/slide0.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Textures/char/idle0.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Textures/char/dash0.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Textures/char/dash1.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Textures/char/run0.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Textures/char/run1.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Textures/char/run2.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Textures/char/run3.png" type="Texture" id=9]
-[ext_resource path="res://Assets/Textures/char/run4.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Textures/char/dash0.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Textures/char/dash1.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Textures/char/run0.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Textures/char/run1.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Textures/char/run2.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Textures/char/run3.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Textures/char/run4.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Textures/char/slide0.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Textures/char/idle0.png" type="Texture" id=10]
 
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
-"frames": [ ExtResource( 2 ) ],
-"loop": true,
-"name": "slide",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 3 ) ],
-"loop": true,
-"name": "idle",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
 "loop": true,
 "name": "dash",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "run",
 "speed": 10.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "slide",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
@@ -69,7 +69,6 @@ _sections_unfolded = [ "Material" ]
 scale = Vector2( 2.2069, 1 )
 frames = SubResource( 1 )
 animation = "dash"
-frame = 1
 playing = true
 __meta__ = {
 "_edit_bone_": true,

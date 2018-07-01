@@ -1,19 +1,22 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Assets/Scripts/UI/Spell_Selection2.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Textures/UI/descriptionsorts.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Textures/UI/menu2.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Textures/UI/PrincipalFire.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Textures/UI/PassiveFire.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Textures/UI/PrincipalWind.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Textures/UI/PassiveWind.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Textures/UI/PrincipalThunder.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Textures/UI/SecondaryThunder.png" type="Texture" id=9]
-[ext_resource path="res://Assets/Textures/UI/PassiveThunder.png" type="Texture" id=10]
-[ext_resource path="res://Assets/Textures/UI/SecondaryWater.png" type="Texture" id=11]
-[ext_resource path="res://Assets/Textures/UI/PassiveWater.png" type="Texture" id=12]
-[ext_resource path="res://Assets/Scenes/Spells/Selected_Spell.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Assets/Textures/UI/boutonsortie.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Textures/UI/Spells/PrincipalFire.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Textures/UI/Spells/SecondaryFire.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Textures/UI/Spells/PassiveFire.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Textures/UI/Spells/PrincipalWind.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Textures/UI/Spells/SecondaryWind.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Textures/UI/Spells/PassiveWind.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Textures/UI/Spells/PrincipalThunder.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Textures/UI/Spells/SecondaryThunder.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Textures/UI/Spells/PassiveThunder.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Textures/UI/Spells/PrincipalWater.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Textures/UI/Spells/SecondaryWater.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Textures/UI/Spells/PassiveWater.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Scenes/Spells/Selected_Spell.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Assets/Textures/UI/boutonsortie.png" type="Texture" id=17]
 
 [node name="Control" type="Control"]
 
@@ -151,6 +154,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+texture_normal = ExtResource( 5 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Passive" type="TextureButton" parent="background/Elements/Fire" index="2" groups=[
@@ -161,7 +165,7 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 105.0
+margin_left = 104.0
 margin_top = 252.0
 margin_right = 161.0
 margin_bottom = 308.0
@@ -176,7 +180,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 5 )
+texture_normal = ExtResource( 6 )
 expand = true
 stretch_mode = 5
 _sections_unfolded = [ "Rect", "Textures" ]
@@ -220,7 +224,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 6 )
+texture_normal = ExtResource( 7 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Secondary" type="TextureButton" parent="background/Elements/Wind" index="1" groups=[
@@ -231,10 +235,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 106.0
-margin_top = 182.0
+margin_left = 105.0
+margin_top = 183.0
 margin_right = 159.0
-margin_bottom = 235.0
+margin_bottom = 236.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -246,6 +250,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+texture_normal = ExtResource( 8 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Passive" type="TextureButton" parent="background/Elements/Wind" index="2" groups=[
@@ -256,10 +261,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 105.0
-margin_top = 254.0
-margin_right = 158.0
-margin_bottom = 307.0
+margin_left = 102.0
+margin_top = 253.0
+margin_right = 160.0
+margin_bottom = 309.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -271,7 +276,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 7 )
+texture_normal = ExtResource( 9 )
+expand = true
 _sections_unfolded = [ "Textures" ]
 
 [node name="Thunder" type="Control" parent="background/Elements" index="2"]
@@ -313,7 +319,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 8 )
+texture_normal = ExtResource( 10 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Secondary" type="TextureButton" parent="background/Elements/Thunder" index="1" groups=[
@@ -339,7 +345,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 9 )
+texture_normal = ExtResource( 11 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Passive" type="TextureButton" parent="background/Elements/Thunder" index="2" groups=[
@@ -350,10 +356,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 105.0
-margin_top = 255.0
-margin_right = 158.0
-margin_bottom = 308.0
+margin_left = 104.0
+margin_top = 252.0
+margin_right = 161.0
+margin_bottom = 309.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -365,7 +371,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 10 )
+texture_normal = ExtResource( 12 )
+expand = true
 _sections_unfolded = [ "Textures" ]
 
 [node name="Water" type="Control" parent="background/Elements" index="3"]
@@ -408,6 +415,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+texture_normal = ExtResource( 13 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Secondary" type="TextureButton" parent="background/Elements/Water" index="1" groups=[
@@ -433,7 +441,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 11 )
+texture_normal = ExtResource( 14 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Passive" type="TextureButton" parent="background/Elements/Water" index="2" groups=[
@@ -444,10 +452,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 106.0
-margin_top = 252.0
-margin_right = 159.0
-margin_bottom = 305.0
+margin_left = 104.0
+margin_top = 251.0
+margin_right = 160.0
+margin_bottom = 307.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -459,10 +467,11 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 12 )
+texture_normal = ExtResource( 15 )
+expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="Selected_Spell" parent="background" index="1" instance=ExtResource( 13 )]
+[node name="Selected_Spell" parent="background" index="1" instance=ExtResource( 16 )]
 
 margin_left = 107.0
 margin_top = 406.0
@@ -579,7 +588,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 14 )
+texture_normal = ExtResource( 17 )
 _sections_unfolded = [ "Textures" ]
 __meta__ = {
 "_edit_lock_": true

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PassiveFire2.png-9f009f7d5126431984be76365508f1a8.stex"
+path="res://.import/PrincipalWind.png-97c8d3469928cc325969ae90866be265.stex"
 
 [deps]
 
-source_file="res://Assets/Textures/UI/PassiveFire2.png"
-source_md5="db61b10aa20b5576e0267c79c6dadc2a"
+source_file="res://Assets/Textures/UI/Spells/PrincipalWind.png"
+source_md5="eca6b3a14594ac9620993ac0c19a6257"
 
-dest_files=[ "res://.import/PassiveFire2.png-9f009f7d5126431984be76365508f1a8.stex" ]
-dest_md5="5262e10ceb22c033d840fb44b3ac86fd"
+dest_files=[ "res://.import/PrincipalWind.png-97c8d3469928cc325969ae90866be265.stex" ]
+dest_md5="3f66170c218685332cc406e7ab306ada"
 
 [params]
 

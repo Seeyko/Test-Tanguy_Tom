@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lance_1_2.png-6d3dc0ebbe984d9d7b6436c8179600b2.stex"
+path="res://.import/SecondaryFire.png-82827f9d30fadab455267b6cefdfa893.stex"
 
 [deps]
 
-source_file="res://Assets/Textures/UI/lance_1_2.png"
-source_md5="2420947b93cb9016e35b3a9fb022a7ba"
+source_file="res://Assets/Textures/UI/Spells/SecondaryFire.png"
+source_md5="3124c08ce6543486e05cbfd3aa30f736"
 
-dest_files=[ "res://.import/lance_1_2.png-6d3dc0ebbe984d9d7b6436c8179600b2.stex" ]
-dest_md5="2640238b74ce35a616586d6a9ce10bd4"
+dest_files=[ "res://.import/SecondaryFire.png-82827f9d30fadab455267b6cefdfa893.stex" ]
+dest_md5="5899ff6f1c7b45c16da921b8c22bc3cd"
 
 [params]
 

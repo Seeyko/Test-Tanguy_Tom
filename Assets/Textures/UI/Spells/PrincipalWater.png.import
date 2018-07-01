@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PassiveWind.png-e2a5d9a417cafda6c228154bb5492b11.stex"
+path="res://.import/PrincipalWater.png-a52c3c0693a89aa45b9da5d5f2b99ca6.stex"
 
 [deps]
 
-source_file="res://Assets/Textures/UI/PassiveWind.png"
-source_md5="191f033832435f99a2ad48ae3c407668"
+source_file="res://Assets/Textures/UI/Spells/PrincipalWater.png"
+source_md5="cde8678607b14760c22faf7355e9bbdc"
 
-dest_files=[ "res://.import/PassiveWind.png-e2a5d9a417cafda6c228154bb5492b11.stex" ]
-dest_md5="5699586f5e97e1172983bb0de3203ee3"
+dest_files=[ "res://.import/PrincipalWater.png-a52c3c0693a89aa45b9da5d5f2b99ca6.stex" ]
+dest_md5="e690fd46dbd591439b135f544254fb58"
 
 [params]
 

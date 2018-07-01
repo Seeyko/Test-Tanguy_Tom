@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spell_progress.png-bfac7b6eb05e752a00a5a0e93f01cd0e.stex"
+path="res://.import/PrincipalFire.png-990f131001ce5daba38bfe9449ca7052.stex"
 
 [deps]
 
-source_file="res://Assets/Textures/UI/spell_progress.png"
-source_md5="40e395e08ab6f4995ec0586c4a0f8ce6"
+source_file="res://Assets/Textures/UI/Spells/PrincipalFire.png"
+source_md5="8bc3dccef2db6abd50bb2ddb2708d30f"
 
-dest_files=[ "res://.import/spell_progress.png-bfac7b6eb05e752a00a5a0e93f01cd0e.stex" ]
-dest_md5="ce66d658db565ec5bff4aa6179bcc51a"
+dest_files=[ "res://.import/PrincipalFire.png-990f131001ce5daba38bfe9449ca7052.stex" ]
+dest_md5="4809f9c811b542a1a6e070c61f464e33"
 
 [params]
 

@@ -47,9 +47,10 @@ var pos_onLvlSelector = Vector2()
 var ui_exist = false
 
 var anim
+
 func _ready():
 	anim = get_parent().get_node("animation")
-	anim.play("idle")
+	
 	moving_scene = true
 	#create the dash timer
 	dash_timer = Timer.new()
@@ -60,6 +61,7 @@ func _ready():
 	
 func _physics_process(delta):
 	
+	$Spear.update_pos()
 	if(moving_scene == true):
 		#check_UI()
 		
@@ -79,9 +81,8 @@ func _physics_process(delta):
 				motion.y = JUMP_HEIGHT
 				have_input = true
 		else:
-			#motion.y += GRAVITY	
-			pass
-		
+			motion.y += GRAVITY	
+					
 		#Si le joueur n'est pas entrain de dash
 		if dash_isFinish:
 			
@@ -199,3 +200,6 @@ func create_ui():
 	var UI_res = load("res://Assets/Scenes/PlayerUI.tscn")
 	var UI = UI_res.instance()
 	add_child(UI)
+	
+func _update_compteur():
+	$runeCompteur._update_compteur()

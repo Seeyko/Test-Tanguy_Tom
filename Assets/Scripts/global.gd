@@ -2,7 +2,7 @@ extends Node
 
 var current_scene = null
 
-var next_level_resource = load("res://Assets/Scenes/hoveringMenu.tscn")
+var next_level_resource = load("res://Assets/Scenes/playerMenu.tscn")
 var next_level = next_level_resource.instance()
 
 func _ready():

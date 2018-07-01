@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Scripts/spear.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Textures/UI/Spear/lance1_1.png" type="Texture" id=2]
+
+[node name="Spear" type="KinematicBody2D"]
+
+position = Vector2( 287.426, 208.245 )
+scale = Vector2( 0.988056, 1.73105 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+damage = 0
+
+[node name="spearCollision" type="CollisionPolygon2D" parent="." index="0"]
+
+position = Vector2( -18.9998, -34.4147 )
+build_mode = 0
+polygon = PoolVector2Array( 15.1397, 5.76222, 12.6922, 6.46152, 10.5943, 11.5314, 10.2446, 16.7762, 14.6152, 17.4755, 14.7901, 58.7342, 13.0418, 59.7831, 13.0418, 63.2796, 19.6852, 63.4544, 19.3355, 58.3845, 17.7621, 58.2097, 17.7621, 17.1258, 22.6572, 17.3007, 22.832, 11.8811, 20.9089, 7.86012, 18.2866, 5.06292 )
+disabled = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="text" type="Sprite" parent="spearCollision" index="0"]
+
+position = Vector2( 15.7734, 31.5468 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Offset" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+

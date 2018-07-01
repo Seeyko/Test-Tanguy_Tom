@@ -1,8 +1,7 @@
 extends Control
 
-
 func _ready():
-	$TextureRect/runeCompteur._update_compteur()
+	runeCompteur._update_compteur()
 	for button in get_tree().get_nodes_in_group("cases"):
 		button.connect("pressed", self, "_some_button_pressed", [button])
 	pass
@@ -21,4 +20,5 @@ func _some_button_pressed(button):
 								accessibleButton.setAccessible()
 			$TextureRect/runeCompteur._update_compteur()
 	else:
+		#Le bouton n'est pas accessible
 		print(" pas accessible ")

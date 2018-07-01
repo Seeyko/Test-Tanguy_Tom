@@ -5,7 +5,7 @@
 [ext_resource path="res://Assets/Scripts/Spherier/cases.gd" type="Script" id=3]
 [ext_resource path="res://Assets/Scenes/UI/runeCompteur.tscn" type="PackedScene" id=4]
 
-[node name="Spherier" type="Control" index="0"]
+[node name="Spherier" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0

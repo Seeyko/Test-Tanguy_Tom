@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Textures/char/player/hanches.png" type="Texture" id=2]
@@ -8,10 +8,16 @@
 [ext_resource path="res://Assets/Textures/char/player/mollet1.png" type="Texture" id=6]
 [ext_resource path="res://Assets/Textures/char/player/pied1.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Textures/char/player/pied2.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Scenes/spear.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Assets/Scenes/UI/runeCompteur.tscn" type="PackedScene" id=10]
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="RectangleShape2D" id=1]
 
-resource_name = "idle"
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="Animation" id=2]
+
 length = 0.01
 loop = false
 step = 0.1
@@ -232,9 +238,8 @@ tracks/17/keys = {
 "values": [ -17.6293 ]
 }
 
-[sub_resource type="Animation" id=1]
+[sub_resource type="Animation" id=3]
 
-resource_name = "jump"
 length = 1.0
 loop = true
 step = 0.1
@@ -527,9 +532,8 @@ tracks/23/keys = {
 "values": [ 0.0 ]
 }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=4]
 
-resource_name = "run"
 length = 1.0
 loop = true
 step = 0.1
@@ -822,25 +826,22 @@ tracks/23/keys = {
 "values": [ 0.0, 0.0 ]
 }
 
-[node name="character sprite" type="Node2D" index="0"]
+[node name="joueur" type="Node2D"]
 
-position = Vector2( 50.8003, 63.088 )
-__meta__ = {
-"_edit_group_": true,
-"_edit_lock_": true
-}
+position = Vector2( 2.16145, 0 )
+scale = Vector2( 1.02862, 1.20686 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="Player" type="KinematicBody2D" parent="." index="0"]
 
+position = Vector2( -2.19616, 4.27304 )
+scale = Vector2( 1.67396, 1.18706 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true,
-"_edit_lock_": true
-}
+_sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="base" type="Node2D" parent="Player" index="0"]
 
@@ -971,6 +972,53 @@ __meta__ = {
 "_edit_bone_": true
 }
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" index="2"]
+
+position = Vector2( -2.74921, 5.22804 )
+scale = Vector2( 1.54979, 3.52634 )
+shape = SubResource( 1 )
+
+[node name="Spear" parent="Player" index="3" instance=ExtResource( 9 )]
+
+position = Vector2( 1.35399, 10.293 )
+scale = Vector2( 1.08363, 0.882585 )
+
+[node name="Camera2D" type="Camera2D" parent="Player" index="4"]
+
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
+smoothing_enabled = false
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+_sections_unfolded = [ "Editor" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="runeCompteur" parent="Player" index="5" instance=ExtResource( 10 )]
+
+margin_left = -189.0
+margin_top = -161.0
+margin_right = -138.0
+margin_bottom = -114.0
+
 [node name="animation" type="AnimationPlayer" parent="." index="1"]
 
 root_node = NodePath("..")
@@ -978,9 +1026,9 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/idle = SubResource( 3 )
-anims/jump = SubResource( 1 )
-"anims/run (copy)" = SubResource( 2 )
+anims/idle = SubResource( 2 )
+anims/jump = SubResource( 3 )
+"anims/run (copy)" = SubResource( 4 )
 blend_times = [  ]
 _sections_unfolded = [ "Playback Options" ]
 

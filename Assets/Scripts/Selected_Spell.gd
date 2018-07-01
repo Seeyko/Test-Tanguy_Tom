@@ -3,11 +3,11 @@ extends Control
 
 func _ready():
 	if(player_data.Principal != null):
-		$UI/Principal.texture = load("res://Assets/Textures/UI/" + str(player_data.Principal) + ".png")
+		$UI/Principal.texture = load("res://Assets/Textures/UI/Spells/" + str(player_data.Principal) + ".png")
 	if(player_data.Secondary != null):
-		$UI/Secondary.texture= load("res://Assets/Textures/UI/" + str(player_data.Secondary) + ".png")
+		$UI/Secondary.texture= load("res://Assets/Textures/UI/Spells/" + str(player_data.Secondary) + ".png")
 	if(player_data.Passive != null):
-		$UI/Passive.texture = load("res://Assets/Textures/UI/" + str(player_data.Passive) + ".png")
+		$UI/Passive.texture = load("res://Assets/Textures/UI/Spells/" + str(player_data.Passive) + ".png")
 	pass
 
 func _save_texture():

@@ -23,7 +23,7 @@ Spells_desc="*res://Assets/Scripts/Description/Spell/Spells_desc.gd"
 Spear_desc="*res://Assets/Scripts/Description/Spear/Spear_desc.gd"
 unlock_case="*res://Assets/Scripts/Spherier/unlock_case.gd"
 enumRunes="*res://Assets/Scripts/Spherier/enumRunes.gd"
-joueur="*res://Assets/Scenes/joueur.tscn"
+runeCompteur="*res://Assets/Scripts/UI/runeCompteur.gd"
 
 [display]
 

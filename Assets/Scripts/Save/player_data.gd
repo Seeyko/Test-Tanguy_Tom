@@ -4,11 +4,12 @@ extends Node
 #--Life
 var currentHealth
 var maxHealth 
-var currentEnergy
-var maxEnergy
+var currentMana
+var maxMana
 
 #LEVEL
-var currentLvl  
+var currentLvl
+#Position a stocker de la ou le joueur
 var pos_onLvlSelector = Vector2()
 
 #SPELL
@@ -18,8 +19,14 @@ var Secondary
 var Passive
 
 #Weapon
+#La lance selectionné
 var spear
+#Les skin de lance selectionné
 var spear1_upgradeSelected
+var spear2_upgradeSelected
+var spear3_upgradeSelected
+var spear4_upgradeSelected
+var spear5_upgradeSelected
 
 #RUNES
 var nbRuneMajeure
@@ -27,7 +34,8 @@ var nbRuneMoyenne
 var nbRuneMineure
 var nbRuneStats
 enum RUNETYPES{runeMajeure,runeMoyenne,runeMineure,runeStats}
-#Wealth
+
+#WEALTH
 var argent
 
 func _ready():
@@ -36,6 +44,7 @@ func _ready():
 	nbRuneMineure = 10
 	nbRuneStats = 10
 
+#Function pour retourner le nombre de runes en fonction du type de rune passé en argument
 func get_player_nbRunes(var runeType):
 	if(runeType == runeMajeure):
 		return nbRuneMajeure
@@ -45,22 +54,36 @@ func get_player_nbRunes(var runeType):
 		return nbRuneMineure
 	if(runeType == runeStats):
 		return nbRuneStats
-func set_nbRunes(var price, var runeType):
-	if(runeType == runeMajeure):
-		nbRuneMajeure = nbRuneMajeure - price
-	if(runeType == runeMoyenne):
-		nbRuneMoyenne = nbRuneMoyenne - price
-	if(runeType == runeMineure):
-		nbRuneMineure = nbRuneMineure - price
-	if(runeType == runeStats):
-		nbRuneStats = nbRuneStats - price
+
+#Function pour le nombre de runes en fonction du type de rune passé en argument
+func set_nbRunes(var price, var runeType, var plus_minus):
+	if(plus_minus):
+		if(runeType == runeMajeure):
+			nbRuneMajeure = nbRuneMajeure + price
+		if(runeType == runeMoyenne):
+			nbRuneMoyenne = nbRuneMoyenne + price
+		if(runeType == runeMineure):
+			nbRuneMineure = nbRuneMineure + price
+		if(runeType == runeStats):
+			nbRuneStats = nbRuneStats + price
+	else:
+		if(runeType == runeMajeure):
+			nbRuneMajeure = nbRuneMajeure - price
+		if(runeType == runeMoyenne):
+			nbRuneMoyenne = nbRuneMoyenne - price
+		if(runeType == runeMineure):
+			nbRuneMineure = nbRuneMineure - price
+		if(runeType == runeStats):
+			nbRuneStats = nbRuneStats - price
+	
 ##------Save DATA-------
-#func save_game():
-#    var save_dict = {
-#	}
-#
-#    return save_dict
-#
+
+func save_game():
+    var save_dict = {
+	}
+
+    return save_dict
+
 #func save_spell():
 #
 #	var spells = {

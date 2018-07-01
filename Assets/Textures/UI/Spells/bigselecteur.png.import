@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PassiveFire.png-0f5adc04eb1a03b757fe50d51a201a0c.stex"
+path="res://.import/bigselecteur.png-9f596b82e9d17eab05aea80e4ba384d6.stex"
 
 [deps]
 
-source_file="res://Assets/Textures/UI/PassiveFire.png"
-source_md5="ff7f553c5a2a18be467a8622ce7db4a8"
+source_file="res://Assets/Textures/UI/Spells/bigselecteur.png"
+source_md5="7c71ddb1b1406911ffe2315a33afc92e"
 
-dest_files=[ "res://.import/PassiveFire.png-0f5adc04eb1a03b757fe50d51a201a0c.stex" ]
-dest_md5="765bebdee726a66c8bfcccc052da2c4b"
+dest_files=[ "res://.import/bigselecteur.png-9f596b82e9d17eab05aea80e4ba384d6.stex" ]
+dest_md5="8fcb9beb3d8f0ba7e9ae67fb98b0628d"
 
 [params]
 

@@ -18,22 +18,22 @@ var pos = ""
 
 func _ready():
 	
-	pos = Player.currentLvl
+	pos = player_data.currentLvl
 	load_level_selector()
 	changeLevel_inConfig_andScreen()                    
 	
 func load_level_selector():
 	
-	$Player.moving_scene = false
-	$Player.position = Vector2(Player.pos_onLvlSelector.x, Player.pos_onLvlSelector.y)
+
+	$Player.position = Vector2(player_data.pos_onLvlSelector.x, player_data.pos_onLvlSelector.y)
 	
 func changeLevel_inConfig_andScreen():
-	$Label.text = LEVEL_TEXT + str(Player.currentLvl)
+	$Label.text = LEVEL_TEXT + str(player_data.currentLvl)
 	 
 func changePos_inConfig_andScreen():
 	
-	Player.pos_onLvlSelector.x = $Player.position.x
-	Player.pos_onLvlSelector.y = $Player.position.y  
+	player_data.pos_onLvlSelector.x = $Player.position.x
+	player_data.pos_onLvlSelector.y = $Player.position.y  
 	
 func _process(delta):
 	
@@ -58,9 +58,9 @@ func _process(delta):
 
 		
 		if path.size() < 2:
-			print("arrive a ", Player.currentLvl)
+			print("arrive a ", player_data.currentLvl)
 			changePos_inConfig_andScreen()
-			$Label.text = (LEVEL_TEXT + str(Player.currentLvl))
+			$Label.text = (LEVEL_TEXT + str(player_data.currentLvl))
 			path = []
 			press = false
 			set_process(false)
@@ -78,7 +78,7 @@ func _update_path():
 func _some_button_pressed(button):
 	press = true
 	pos = button.name
-	Player.currentLvl = int(button.name)
+	player_data.currentLvl = int(button.name)
 	changeLevel_inConfig_andScreen() 
 	begin = $Player.position
 	# Mouse to local navigation coordinates

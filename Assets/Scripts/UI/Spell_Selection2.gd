@@ -17,12 +17,12 @@ func _process(delta):
 
 
 func _some_button_pressed(button):
-	var texture = load("res://Assets/Textures/UI/"+button.name+button.get_parent().name + ".png")
+	var texture = load("res://Assets/Textures/UI/Spells/"+button.name+button.get_parent().name + ".png")
 	get_node("background/Selected_Spell/UI/"+ button.name).texture = texture
 	
 	
 func _some_button_hover(button):
-	var texture = load("res://Assets/Textures/UI/bigselecteur.png")
+	var texture = load("res://Assets/Textures/UI/Spells/bigselecteur.png")
 	button.texture_focused = texture
 	button.grab_focus()
 	$background/Desc/Name.clear()

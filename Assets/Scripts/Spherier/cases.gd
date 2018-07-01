@@ -20,7 +20,7 @@ func buy():
 	var player_nbRunes = player_data.get_player_nbRunes(runeType)
 	if(player_nbRunes >= price):
 		buy = true
-		player_data.set_nbRunes(self.price, runeType)
+		player_data.set_nbRunes(self.price, runeType, false)
 		self.texture_normal = load("res://Assets/Textures/UI/boutonsortie.png")
 		print("Vous avez acheté " + self.case_name)
 		return true

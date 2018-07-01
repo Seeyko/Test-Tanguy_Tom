@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PrincipalThunder.png-ddedb2128a3f25d1a38012e2f26c7f72.stex"
+path="res://.import/PassiveThunder.png-e072cdf853afc3b6f97ab47857286891.stex"
 
 [deps]
 
-source_file="res://Assets/Textures/UI/PrincipalThunder.png"
-source_md5="bf7d0f63b918396ea7b9f9e070f6e282"
+source_file="res://Assets/Textures/UI/Spells/PassiveThunder.png"
+source_md5="0d6f6ce70c6d68711e43f5854106b2c2"
 
-dest_files=[ "res://.import/PrincipalThunder.png-ddedb2128a3f25d1a38012e2f26c7f72.stex" ]
-dest_md5="2d6ca7eb699a9283407e79baf51cefa4"
+dest_files=[ "res://.import/PassiveThunder.png-e072cdf853afc3b6f97ab47857286891.stex" ]
+dest_md5="6bb8b264a24b44574e7ea839b9ef65e3"
 
 [params]
 
